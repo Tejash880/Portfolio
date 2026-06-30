@@ -32,7 +32,7 @@ export function GithubContributions() {
       >
         <div className="flex justify-center p-4 hover:scale-[1.02] transition-transform duration-300">
           <GitHubCalendar
-            username="tejartr7"
+            username="Tejash880"
             colorScheme={resolvedTheme as "light" | "dark"}
             fontSize={12}
             blockSize={12}

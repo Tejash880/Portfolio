@@ -156,19 +156,19 @@ export const FAQList: FAQProps[] = [
 export const builtWithIndieLaunch: BuiltWithIndieLaunch[] = [
   {
     title: "Autograde",
-    url: "#",
+    url: "https://autograde-n1lv.vercel.app",
     image: "/images/autograde.png",
     description: "An AI-powered answer evaluation system using semantic similarity, NLP, and NLI to automatically grade descriptive answers."
   },
   {
     title: "SnapShots",
-    url: "#",
+    url: "https://www.getsnapshots.app/",
     image: "https://oafigsv8yj.ufs.sh/f/b7ZUAnePqlpydctMx0VVA9S1UZiNxWHkBYjofKD5gRObEJyp",
     description: "Full-stack mockup generation tool that automates App Store and Product Hunt asset creation, used by 200+ creators."
   },
   {
     title: "TextBehindVideo",
-    url: "#",
+    url: "https://text-behind-video.vercel.app",
     image: "/images/textbehindvideo.png",
     description: "Cloud-integrated video processing platform that automates rotoscoping and renders dynamic text layers behind subjects."
   }
@@ -199,7 +199,7 @@ export const footerConfig = {
     },
     {
       title: "Connect",
-      links: [{ text: "GitHub", href: "https://github.com/tejartr7" }],
+      links: [{ text: "GitHub", href: "https://github.com/Tejash880" }],
     },
   ],
 };
@@ -235,15 +235,15 @@ export const skills: Skill[] = [
 export const socials = [
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/hazari-tejash/",
+    url: "https://www.linkedin.com/in/tejash-hazari-015485337/",
   },
   {
     name: "GitHub",
-    url: "https://github.com/tejartr7",
+    url: "https://github.com/Tejash880",
   },
   {
     name: "LeetCode",
-    url: "https://leetcode.com/u/hazari-tejash/",
+    url: "https://leetcode.com/u/Tejash9/",
   },
   {
     name: "Email",
