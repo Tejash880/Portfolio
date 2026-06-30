@@ -1,6 +1,6 @@
 import { socials } from "@/configs/config";
 import Link from "next/link";
-import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaTwitter, FaGithub, FaLinkedin, FaCode } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { SiLeetcode, SiDevpost } from "react-icons/si";
 import { IconType } from "react-icons";
@@ -12,6 +12,7 @@ const iconMap: Record<string, IconType> = {
   Email: MdEmail,
   LeetCode: SiLeetcode,
   Devpost: SiDevpost,
+  Codolio: FaCode,
 };
 
 const Socials = () => {

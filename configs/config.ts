@@ -249,6 +249,10 @@ export const socials = [
     name: "Email",
     url: "mailto:hazaritejash@gmail.com",
   },
+  {
+    name: "Codolio",
+    url: "https://codolio.com/profile/Tejash",
+  },
 ];
 export const educations = [
   {
