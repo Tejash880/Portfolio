@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { RocketLaunch } from "phosphor-react";
 import { footerConfig } from "@/configs/config";
 import Logo from "@/components/Logo";
 import Link from "next/link";
@@ -23,23 +22,8 @@ const Footer: React.FC = () => {
               <Logo />
             </Link>
             <p className="mt-3 text-sm text-foreground-hsl/70 leading-relaxed">
-              Copyright ©2025 All rights reserved
+              Copyright ©2026 All rights reserved
             </p>
-            <Link
-              href="https://getindielaunch.com" target="_blank"
-              className="inline-block mt-4 text-sm border border-border-color-primary hover:border-border-color-primary/40 hover:text-foreground-hsl/90 hover:bg-background-primary/35 duration-200 cursor-pointer rounded text-foreground-hsl/80 px-2 py-1"
-            >
-              <div className="flex gap-1 items-center">
-                <span className="text-foreground-hsl/55">Built with</span>
-                <span className="font-bold text-base-content flex gap-0.5 items-center tracking-tight text-primary-color">
-                  <RocketLaunch size={20} weight="fill" />
-                  <span className="text-foreground-hsl">IndieLaunch</span>
-                </span>
-              </div>
-            </Link>
-            <div className="my-8 flex justify-center lg:justify-start items-center">
-              <a href="https://startupfa.me/s/indielaunch-1?utm_source=rtrdev.live" target="_blank"><img src="https://startupfa.me/badges/featured-badge-small.webp" alt="IndieLaunch - Production Ready Landing Page Template | Startup Fame" width="224" height="36" /></a>
-            </div>
           </div>
           <div className="flex-grow flex flex-wrap md:pl-24 -mb-10 md:mt-0 mt-10 text-center md:text-left">
             {sections.map((section, index) => (

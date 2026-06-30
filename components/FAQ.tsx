@@ -15,7 +15,7 @@ const FAQ = () => {
         <section id="faq" className="container py-8 sm:py-8 pb-12">
           <div className="w-full lg:w-[70%] mx-auto text-center"> {/* Modified for better responsiveness */}
             <Heading
-              title="Why RTR is the best?"
+              title="Frequently Asked Questions"
               description="Here are some common questions you might have."
             />
             <Accordion

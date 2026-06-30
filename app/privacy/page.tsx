@@ -1,12 +1,16 @@
-import Head from "next/head";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
+
+export const metadata = {
+  title: 'Privacy Policy - Hazari Tejash',
+  description: 'Privacy Policy for Hazari Tejash Portfolio',
+};
 
 const privacyPolicies = [
   {
     title: "1. Introduction",
     content:
-      "At IndieLaunch, we value your privacy and are committed to safeguarding any information shared with us when you use our website or related platforms.",
+      "At Hazari Tejash, we value your privacy and are committed to safeguarding any information shared with us when you use our website or related platforms.",
   },
   {
     title: "2. Information We Collect",
@@ -26,7 +30,7 @@ const privacyPolicies = [
   {
     title: "5. Data Protection",
     content:
-      "IndieLaunch is committed to maintaining a secure and privacy-respecting platform. While we do not collect data, we follow best practices to ensure the website's overall security.",
+      "Hazari Tejash is committed to maintaining a secure and privacy-respecting platform. While we do not collect data, we follow best practices to ensure the website's overall security.",
   },
   {
     title: "6. Third-Party Links",
@@ -53,10 +57,6 @@ const privacyPolicies = [
 export default function Terms() {
   return (
     <div>
-      <Head>
-        <title>Privacy Policy - IndieLaunch</title>
-        <meta name="description" content="Privacy Policy for IndieLaunch" />
-      </Head>
       <div className="font-brico font-normal">
         <div className="max-w-xl mx-auto">
           <div className="p-5 flex flex-col gap-5">

@@ -8,10 +8,10 @@ const OurProducts = () => {
     <section id="products" className="mt-8 pt-8 px-4 lg:px-20">
       <div className="text-center space-y-4 my-4">
         <h2 className="tracking-tight font-extrabold !leading-tight text-foreground text-3xl md:text-4xl">
-          Products Built By <span className="text-[#EC1380]">RTR</span>
+          Products Built By <span className="text-[#EC1380]">Hazari Tejash</span>
         </h2>
         <p className="text-muted-foreground">
-          Checkout these awesome Products built by RTR
+          Checkout these awesome Products built by Hazari Tejash
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

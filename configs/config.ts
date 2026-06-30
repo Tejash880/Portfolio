@@ -6,11 +6,7 @@ import {
   SiTypescript,
   SiJavascript,
   SiTailwindcss,
-  SiSupabase,
-  SiFirebase,
-  SiPrisma,
 } from "react-icons/si";
-import { BiLogoMongodb } from "react-icons/bi";
 import { FaCode } from "react-icons/fa";
 import {
   SiteConfig,
@@ -252,7 +248,6 @@ export const socials = [
   {
     name: "Email",
     url: "mailto:hazaritejash@gmail.com",
-    icon: "twitter",
   },
 ];
 export const educations = [

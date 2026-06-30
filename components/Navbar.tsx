@@ -72,7 +72,7 @@ const Navbar = () => {
               <SheetContent side={"left"}>
                 <SheetHeader>
                   <SheetTitle className="font-bold text-xl text-start">
-                    RTR
+                    Hazari Tejash
                   </SheetTitle>
                 </SheetHeader>
                 <div className="flex flex-col justify-center items-start space-y-3 mt-6">

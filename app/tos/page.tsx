@@ -1,46 +1,46 @@
 import { ArrowLeft } from "lucide-react";
-import Head from "next/head";
 import Link from "next/link";
+
+export const metadata = {
+  title: 'Terms of Service - Hazari Tejash',
+  description: 'Terms of Service for Hazari Tejash Portfolio',
+};
 const questions = [
   {
     title: "1. Introduction",
     content:
-      "These terms and conditions outline the rules for using IndieLaunch services and software, tailored to create landing pages for SAAS/MVP/Startups.",
+      "These terms and conditions outline the rules for using Hazari Tejash services and software, tailored to create landing pages for SAAS/MVP/Startups.",
   },
   {
     title: "2. Agreement to Terms and Conditions",
     content:
-      "By purchasing and using IndieLaunch, you agree to these terms and conditions.",
+      "By purchasing and using Hazari Tejash, you agree to these terms and conditions.",
   },
   {
     title: "3. Responsibilities",
     content:
-      "IndieLaunch is not responsible for what the user does with the user-generated content.",
+      "Hazari Tejash is not responsible for what the user does with the user-generated content.",
   },
   {
     title: "4. Guarantee",
     content:
-      "IndieLaunch does not give any warranty, guarantee or other term as to the quality, fitness for purpose or otherwise of the software.",
+      "Hazari Tejash does not give any warranty, guarantee or other term as to the quality, fitness for purpose or otherwise of the software.",
   },
   {
     title: "5. Refunds",
     content:
-      "Due to the digital nature of IndieLaunch, once access to the platform is granted, no refunds or exchanges will be issued.",
+      "Due to the digital nature of Hazari Tejash, once access to the platform is granted, no refunds or exchanges will be issued.",
   },
   {
     title: "6. Change to Terms",
     content:
-      "IndieLaunch may modify these terms and conditions from time to time. You will be notified of any significant changes. However, you are responsible for reviewing these terms periodically for updates.",
+      "Hazari Tejash may modify these terms and conditions from time to time. You will be notified of any significant changes. However, you are responsible for reviewing these terms periodically for updates.",
   },
 ];
 
 export default function Terms() {
   return (
     <div>
-      <Head>
-        <title>Privacy Policy - IndieLaunch</title>
-        <meta name="description" content="Terms and Services for IndieLaunch" />
-      </Head>
       <div className="font-brico font-normal">
         <div className="max-w-xl mx-auto ">
           <div className="p-5 flex flex-col gap-5">

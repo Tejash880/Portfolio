@@ -2,9 +2,7 @@ import { NextResponse, NextRequest } from "next/server";
 
 // the list of all allowed origins
 const allowedOrigins = [
-  "https://www.getindielaunch.com/",
-  "https://getindielaunch.com/",
-  "http://localhost:3000/",
+  "http://localhost:3000",
 ];
 
 export function middleware(req: NextRequest) {
