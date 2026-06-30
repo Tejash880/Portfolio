@@ -19,7 +19,7 @@ const Socials = () => {
   return (
     <section id="socials" className="w-full flex flex-col items-center py-8 gap-6">
       <h1 className="text-2xl font-bold text-black dark:text-white">Socials</h1>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-4xl mx-auto px-4">
+      <div className="flex flex-wrap justify-center gap-4 max-w-5xl mx-auto px-4">
         {socials.map((social, index) => {
           const IconComponent = iconMap[social.name];
           return (
