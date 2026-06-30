@@ -38,7 +38,7 @@ export function HeroSection() {
               src="/images/avatar.png"
               alt="Profile picture"
               fill
-              className="object-cover"
+              className="object-cover object-center scale-[1.35]"
               priority
             />
           </div>
