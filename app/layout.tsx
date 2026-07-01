@@ -2,6 +2,7 @@ import { ThemeProvider } from "@/components/ui/ThemeProvider";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const font = Inter({
@@ -10,8 +11,9 @@ const font = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Hazari Tejash | Portfolio",
-  description: "Know more about me",
+  metadataBase: new URL("https://tejash-portfolio.vercel.app"),
+  title: "Hazari Tejash | Software Engineer & AI Enthusiast",
+  description: "Portfolio of Hazari Tejash — Software Engineer specializing in AI, Machine Learning, and Full Stack Development. Explore projects, skills, and experience.",
   openGraph: {
     images: [
       {
@@ -31,7 +33,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
       <body className={cn("antialiased", font.className)}>
         <ThemeProvider
           attribute="class"
@@ -41,6 +42,7 @@ export default function RootLayout({
         >
           <main>{children}</main>
         </ThemeProvider>
+        <Script src="https://scripts.simpleanalyticscdn.com/latest.js" strategy="afterInteractive" />
       </body>
     </html>
   );

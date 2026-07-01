@@ -2,7 +2,7 @@ import { BlurFade } from "@/components/magicui/blur-fade";
 import { ResumeCard } from "@/components/ui/resume-card";
 import { educations } from "@/configs/config";
 const BLUR_FADE_DELAY = 0.04;
-const WorkExp = () => {
+const Education = () => {
   return (
     <div>
       <section
@@ -32,4 +32,4 @@ const WorkExp = () => {
   );
 };
 
-export default WorkExp;
+export default Education;

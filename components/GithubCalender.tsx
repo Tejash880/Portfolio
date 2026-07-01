@@ -23,7 +23,7 @@ export function GithubContributions() {
 
   return (
     <div className="w-full flex flex-col items-center justify-center gap-6 pt-2 pb-4">
-      <h2 className="py-2 text-3xl font-bold text-center text-black dark:text-white">
+      <h2 className="py-2 text-3xl font-bold text-center">
         Coding Activity
       </h2>
       <motion.div

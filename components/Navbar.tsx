@@ -27,7 +27,7 @@ const routeList: RouteProps[] = [
   },
   {
     href: "#work",
-    label: "WorkExp",
+    label: "Experience",
   },
   {
     href: "#products",
@@ -46,7 +46,7 @@ const routeList: RouteProps[] = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
-    <nav className="sticky border-b-[1px] top-0 z-40 w-full bg-white dark:border-b-slate-700 dark:bg-background">
+    <nav className="sticky border-b-[1px] top-0 z-40 w-full bg-background border-b-border">
       <NavigationMenu className="mx-auto">
         <div className="container h-16 px-4 w-screen flex items-center">
           {/* Logo section - left */}

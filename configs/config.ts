@@ -1,4 +1,3 @@
-import { Zap, Rocket, Layers, PenTool, Sliders, Package } from "lucide-react";
 import { IconType } from "react-icons";
 import { FaReact, FaJava } from "react-icons/fa";
 import {
@@ -10,12 +9,8 @@ import {
 import { FaCode } from "react-icons/fa";
 import {
   SiteConfig,
-  FeatureSection,
   FAQProps,
-  UseCases,
-  Reviews,
-  PricingSectionFeatures,
-  BuiltWithIndieLaunch,
+  Project,
 } from "@/types";
 
 export const siteConfigs: SiteConfig = {
@@ -24,112 +19,6 @@ export const siteConfigs: SiteConfig = {
   description:
     "A portfolio showcasing my projects, skills, and experience.",
 };
-
-export const useCases: UseCases = [
-  {
-    title: "New to Frontend?",
-    description:
-      "Use our ready-made responsive landing page template to create your website fast.",
-  },
-  {
-    title: "Test Your Idea",
-    description:
-      "Get feedback on your idea quickly with a simple landing page before spending time on development.",
-  },
-  {
-    title: "Build Your Website",
-    description:
-      "Create a professional website for yourself or your product without technical hassles.",
-  },
-];
-
-export const indieHackerFeatures: FeatureSection[] = [
-  {
-    title: "Effortless Setup",
-    description:
-      "Designed for non-coders to quickly create and launch a professional landing page.",
-    list: [
-      {
-        icon: Zap,
-        title: "No Coding Knowledge Needed",
-        description:
-          "Perfect for creators and entrepreneurs without a technical background.",
-      },
-      {
-        icon: Rocket,
-        title: "Launch in Minutes",
-        description: "Get your landing page live with minimal effort and time.",
-      },
-      {
-        icon: Layers,
-        title: "Easy Configuration",
-        description:
-          "Modify your page using a simple, beginner-friendly JSON file.",
-      },
-    ],
-    src: "/images/nextjs.jpg",
-  },
-  {
-    title: "Beautiful & Professional",
-    description:
-      "Give your idea the online presence it deserves with a modern and sleek design.",
-    list: [
-      {
-        icon: PenTool,
-        title: "Startup-Optimized Design",
-        description:
-          "A clean, responsive layout tailored for startups and creators.",
-      },
-      {
-        icon: Sliders,
-        title: "Customizable Features",
-        description:
-          "Adjust the design to fit your brand without writing any code.",
-      },
-      {
-        icon: Package,
-        title: "Ready-to-Use Template",
-        description:
-          "Simply configure and deploy—no complicated setup required.",
-      },
-    ],
-    src: "/images/lander_light.png",
-  },
-];
-
-export const pricingSectionFeatures: PricingSectionFeatures = [
-  "🚀 Zero to Launch in Minutes: Complete SaaS Landing Page Template",
-  "🎨 Pixel-Perfect Design System: Tailwind CSS + Shadcn UI Components",
-  "⚡ Performance Optimized: Next.js & Framer Motion Powered Interactions",
-  "🔧 Code-Free Customization: Make It Yours Without Design Panic",
-];
-// Testimonials of the product
-export const reviews: Reviews = [
-  {
-    name: "Manjesh",
-    rating: 5,
-    review:
-      "This template is a game-changer. It saves a lot of Development time.",
-    image: "/images/manjesh.jpg",
-    twitterhandle: "https://x.com/manjesh_webdev",
-  },
-  {
-    name: "Deeps",
-    rating: 5,
-    review:
-      "Happy to see Indie launch, a simple straightforward next js landing page template to launch quickly.",
-    image: "/images/deeps.png",
-    twitterhandle: "https://x.com/soulblissX",
-  },
-  {
-    name: "Vincent",
-    rating: 5,
-    review:
-      "Very cool bro, code looks well structured and for my first time using next.js, it's a breeze to install and get it running. In 2 commands, my landing page was ready.",
-    image: "/images/vincent.jpg",
-    twitterhandle: "https://twitter.com/vincent_build",
-  },
-];
 
 export const FAQList: FAQProps[] = [
   {
@@ -153,7 +42,7 @@ export const FAQList: FAQProps[] = [
   },
 ];
 
-export const builtWithIndieLaunch: BuiltWithIndieLaunch[] = [
+export const projects: Project[] = [
   {
     title: "Autograde",
     url: "https://autograde-n1lv.vercel.app",
@@ -177,13 +66,13 @@ export const builtWithIndieLaunch: BuiltWithIndieLaunch[] = [
 export const footerConfig = {
   logo: "RocketLaunch",
   brand: "Hazari Tejash",
-  description: "",
+  description: "Software Engineer & AI Enthusiast",
   sections: [
     {
       title: "Links",
       links: [
         { href: "#skills", text: "Skills" },
-        { href: "#work", text: "WorkExp" },
+        { href: "#work", text: "Experience" },
         { href: "#products", text: "Projects" },
         { href: "#socials", text: "Socials" },
         { href: "#education", text: "Education" },
@@ -192,17 +81,21 @@ export const footerConfig = {
     {
       title: "Projects",
       links: [
-        { text: "Autograde", href: "#" },
-        { text: "SnapShots", href: "#" },
-        { text: "TextBehindVideo", href: "#" },
+        { text: "Autograde", href: "https://autograde-n1lv.vercel.app" },
+        { text: "SnapShots", href: "https://www.getsnapshots.app/" },
+        { text: "TextBehindVideo", href: "https://text-behind-video.vercel.app" },
       ],
     },
     {
       title: "Connect",
-      links: [{ text: "GitHub", href: "https://github.com/Tejash880" }],
+      links: [
+        { text: "GitHub", href: "https://github.com/Tejash880" },
+        { text: "LinkedIn", href: "https://www.linkedin.com/in/tejash-hazari-015485337/" },
+      ],
     },
   ],
 };
+
 export const workExperience = [
   {
     company: "Viswam AI — Meta",
@@ -215,9 +108,10 @@ export const workExperience = [
     description: "Built a data collection and storage application using Python and Flask. Designed and deployed Streamlit applications integrating Hugging Face API. Applied prompt engineering techniques and built automated data pipelines for ML model training pipelines."
   }
 ];
+
 interface Skill {
   name: string;
-  icon: IconType; // 'any' added for Lucide icons compatibility
+  icon: IconType;
 }
 
 export const skills: Skill[] = [
@@ -232,6 +126,7 @@ export const skills: Skill[] = [
   { name: "Machine Learning", icon: FaCode },
   { name: "DSA", icon: FaCode },
 ];
+
 export const socials = [
   {
     name: "LinkedIn",
@@ -254,6 +149,7 @@ export const socials = [
     url: "https://codolio.com/profile/Tejash",
   },
 ];
+
 export const educations = [
   {
     school: "Gokaraju Rangaraju Institute Of Engineering and Technology",

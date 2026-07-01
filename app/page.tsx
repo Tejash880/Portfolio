@@ -10,8 +10,7 @@ import OurProducts from "@/components/OurProducts";
 import FAQ from "@/components/FAQ";
 export default function Home() {
   return (
-    <div suppressHydrationWarning>
-      <>
+    <div>
         <Navbar />
         <HeroSection />
         <GithubContributions />
@@ -22,7 +21,6 @@ export default function Home() {
         <Education />
         <FAQ/>
         <Footer />
-      </>
     </div>
   );
 }
