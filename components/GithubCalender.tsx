@@ -33,11 +33,13 @@ export function GithubContributions() {
       >
         <div className="flex flex-col items-center justify-center gap-6 hover:scale-[1.01] transition-transform duration-300">
           
-          <div className="w-full flex justify-center p-4">
-            <img 
-              src={`https://dsastats.vercel.app/api/codolio/Tejash9?theme=${resolvedTheme === 'dark' ? 'dark' : 'light'}`}
-              alt="Codolio Stats"
-              className="w-full max-w-4xl"
+          <div className="w-full h-[500px] md:h-[700px] flex justify-center overflow-hidden rounded-xl">
+            <iframe
+              src="https://codolio.com/profile/Tejash"
+              width="100%"
+              height="100%"
+              className="border-0 rounded-xl"
+              title="Codolio Profile"
             />
           </div>
 
