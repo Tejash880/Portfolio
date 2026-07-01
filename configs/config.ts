@@ -46,7 +46,7 @@ export const projects: Project[] = [
   {
     title: "Autograde",
     url: "https://autograde-n1lv.vercel.app",
-    image: "/images/starters.png",
+    image: "/images/autograde.png",
     description: "An AI-powered answer evaluation system using semantic similarity, NLP, and NLI to automatically grade descriptive answers."
   },
   {
@@ -58,7 +58,7 @@ export const projects: Project[] = [
   {
     title: "TextBehindVideo",
     url: "https://text-behind-video.vercel.app",
-    image: "/images/screenflow.png",
+    image: "/images/textbehindvideo.png",
     description: "Cloud-integrated video processing platform that automates rotoscoping and renders dynamic text layers behind subjects."
   }
 ];
@@ -124,6 +124,7 @@ export const skills: Skill[] = [
   { name: "TailwindCSS", icon: SiTailwindcss },
   { name: "Flask", icon: FaCode },
   { name: "Machine Learning", icon: FaCode },
+  { name: "Artificial Intelligence", icon: FaCode },
   { name: "DSA", icon: FaCode },
 ];
 
