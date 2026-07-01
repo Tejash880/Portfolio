@@ -24,7 +24,7 @@ export function GithubContributions() {
   return (
     <div className="w-full flex flex-col items-center justify-center gap-6 pt-2 pb-4">
       <h2 className="py-2 text-3xl font-bold text-center">
-        Coding Activity
+        GitHub Activity
       </h2>
       <motion.div
         className="w-full max-w-4xl mx-auto overflow-hidden rounded-xl bg-card hover:shadow-lg transition-shadow duration-300 p-6 border border-primary/20"
@@ -45,7 +45,7 @@ export function GithubContributions() {
           </div>
 
           <Link
-            href="https://codolio.com/profile/Tejash"
+            href="https://codolio.com/profile/Tejash9"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-2 px-8 py-3 bg-[#EC1380] text-white rounded-lg font-medium hover:bg-opacity-90 transition-all flex items-center gap-2"

@@ -46,7 +46,7 @@ export const projects: Project[] = [
   {
     title: "Autograde",
     url: "https://autograde-n1lv.vercel.app",
-    image: "/images/autograde.png",
+    image: "/images/starters.png",
     description: "An AI-powered answer evaluation system using semantic similarity, NLP, and NLI to automatically grade descriptive answers."
   },
   {
@@ -58,7 +58,7 @@ export const projects: Project[] = [
   {
     title: "TextBehindVideo",
     url: "https://text-behind-video.vercel.app",
-    image: "/images/textbehindvideo.png",
+    image: "/images/screenflow.png",
     description: "Cloud-integrated video processing platform that automates rotoscoping and renders dynamic text layers behind subjects."
   }
 ];
@@ -99,7 +99,7 @@ export const footerConfig = {
 export const workExperience = [
   {
     company: "Viswam AI — Meta",
-    logoUrl: "/images/meta.png",
+    logoUrl: "/images/avatar.png",
     title: "AI-Intern",
     href: "#",
     badges: ["Internship"],
@@ -146,7 +146,7 @@ export const socials = [
   },
   {
     name: "Codolio",
-    url: "https://codolio.com/profile/Tejash",
+    url: "https://codolio.com/profile/Tejash9",
   },
 ];
 
@@ -155,7 +155,7 @@ export const educations = [
     school: "Gokaraju Rangaraju Institute Of Engineering and Technology",
     href: "#",
     degree: "BTech in Computer Science - AI and ML",
-    logoUrl: "/images/griet.png",
+    logoUrl: "/images/vnrvjiet.jpg",
     start: "Sep 2023",
     end: "July 2027",
   },
