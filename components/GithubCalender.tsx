@@ -1,13 +1,11 @@
 "use client";
 
 import React from "react";
-import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { FaCode } from "react-icons/fa";
 
 export function GithubContributions() {
-  const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = React.useState(false);
 
   React.useEffect(() => {
