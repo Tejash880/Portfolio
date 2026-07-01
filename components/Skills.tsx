@@ -6,28 +6,26 @@ const BLUR_FADE_DELAY = 0.04;
 
 const Skills = () => {
   return (
-    <div>
-      <section
-        id="skills"
-        className="bg-background font-sans antialiased max-w-2xl mx-auto py-4 sm:py-2 px-6 text-xl"
-      >
-        <div className="flex min-h-0 flex-col gap-y-3">
-          <BlurFade delay={BLUR_FADE_DELAY * 9}>
-            <h2 className="text-3xl font-bold text-center mb-6">Skills</h2>
+    <section id="skills" className="w-full py-12">
+      <div className="text-center space-y-4 mb-10">
+        <h2 className="tracking-tight font-extrabold !leading-tight text-foreground text-3xl md:text-5xl">
+          Skills & Technologies
+        </h2>
+        <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+          The tools and technologies I use to bring ideas to life.
+        </p>
+      </div>
+      <div className="flex flex-wrap gap-3 justify-center max-w-4xl mx-auto px-4">
+        {skills.map(({ name, icon: Icon }) => (
+          <BlurFade key={name} delay={BLUR_FADE_DELAY * 10}>
+            <Badge className="flex items-center gap-2 px-4 py-2 text-sm md:text-base hover:scale-110 transition-transform duration-300 shadow-sm border-primary/20 hover:border-primary">
+              <Icon className="w-5 h-5" />
+              {name}
+            </Badge>
           </BlurFade>
-          <div className="flex flex-wrap gap-2 justify-center">
-            {skills.map(({ name, icon: Icon }) => (
-              <BlurFade key={name} delay={BLUR_FADE_DELAY * 10}>
-                <Badge className="flex items-center gap-2 px-3 py-1.5 text-sm hover:scale-105 transition-transform duration-200">
-                  <Icon className="w-4 h-4" />
-                  {name}
-                </Badge>
-              </BlurFade>
-            ))}
-          </div>
-        </div>
-      </section>
-    </div>
+        ))}
+      </div>
+    </section>
   );
 };
 
