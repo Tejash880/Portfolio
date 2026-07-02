@@ -1,12 +1,15 @@
 import { IconType } from "react-icons";
-import { FaReact, FaJava } from "react-icons/fa";
+import { FaReact, FaJava, FaBrain, FaCode } from "react-icons/fa";
 import {
   SiNextdotjs,
   SiTypescript,
   SiJavascript,
   SiTailwindcss,
+  SiPython,
+  SiFlask,
+  SiTensorflow,
 } from "react-icons/si";
-import { FaCode } from "react-icons/fa";
+
 import {
   SiteConfig,
   FAQProps,
@@ -99,7 +102,7 @@ export const footerConfig = {
 export const workExperience = [
   {
     company: "Viswam AI — Meta",
-    logoUrl: "/images/avatar.png",
+    logoUrl: "/images/og-image.png", // Using og-image as placeholder, replace with actual company logo
     title: "AI-Intern",
     href: "#",
     badges: ["Internship"],
@@ -115,17 +118,17 @@ interface Skill {
 }
 
 export const skills: Skill[] = [
-  { name: "Python", icon: FaCode },
+  { name: "Python", icon: SiPython },
   { name: "Java", icon: FaJava },
   { name: "JavaScript", icon: SiJavascript },
   { name: "TypeScript", icon: SiTypescript },
   { name: "React", icon: FaReact },
   { name: "Next.js", icon: SiNextdotjs },
   { name: "TailwindCSS", icon: SiTailwindcss },
-  { name: "Flask", icon: FaCode },
-  { name: "Machine Learning", icon: FaCode },
-  { name: "Artificial Intelligence", icon: FaCode },
-  { name: "DSA", icon: FaCode },
+  { name: "Flask", icon: SiFlask },
+  { name: "Machine Learning", icon: SiTensorflow },
+  { name: "Artificial Intelligence", icon: FaBrain },
+  { name: "DSA", icon: FaCode }, // Using FaCode for DSA as there isn't a specific icon in the current imports, or could use FaChartLine if available
 ];
 
 export const socials = [
@@ -156,7 +159,7 @@ export const educations = [
     school: "Gokaraju Rangaraju Institute Of Engineering and Technology",
     href: "#",
     degree: "BTech in Computer Science - AI and ML",
-    logoUrl: "/images/vnrvjiet.jpg",
+    logoUrl: "/images/og-image.png", // Using og-image as placeholder, replace with actual college logo
     start: "Sep 2023",
     end: "July 2027",
   },
