@@ -1,62 +1,64 @@
 import { projects } from "@/configs/config";
 import Image from "next/image";
 import Link from "next/link";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 
 const OurProducts = () => {
   return (
-    <section id="products" className="mt-8 pt-8 px-4 lg:px-20">
-      <div className="text-center space-y-4 my-4">
-        <h2 className="tracking-tight font-extrabold !leading-tight text-foreground text-3xl md:text-4xl">
-          Projects
+    <section id="products" className="w-full">
+      <div className="text-center space-y-4 mb-12">
+        <h2 className="tracking-tight font-extrabold !leading-tight text-foreground text-3xl md:text-5xl">
+          Featured Projects
         </h2>
-        <p className="text-muted-foreground">
-          A selection of projects I have built
+        <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+          A selection of things I&apos;ve built, exploring new technologies and solving real-world problems.
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((product, index) => (
-          <section
+          <div
             key={index}
-            className="card bg-base-200 rounded-lg border transition-colors duration-200 ease-in-out overflow-hidden 
-      border-border w-full max-w-sm mx-auto"
+            className="group flex flex-col justify-between bg-card hover:bg-accent/40 rounded-2xl border border-border overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 hover:border-primary/30"
           >
             {product?.image && (
-              <figure className="flex justify-center items-center w-full">
+              <div className="relative w-full aspect-video overflow-hidden">
                 <Image
                   src={product.image}
-                  alt={"product image"}
-                  width={400} // Uniform width
-                  height={225} // Uniform height
-                  className="aspect-video object-center object-cover hover:scale-[1.03] duration-200 ease-in-out"
+                  alt={product.title}
+                  fill
+                  className="object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-in-out"
                 />
-              </figure>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </div>
             )}
-            <div className="card-body">
-              {/* TITLE */}
-              <h2 className="text-center mb-1 text-xl md:text-2xl font-bold">
-                {product.title}
-              </h2>
+            <div className="p-6 flex flex-col flex-grow">
+              <h3 className="text-2xl font-bold mb-3">{product.title}</h3>
+              <p className="text-muted-foreground flex-grow mb-6 line-clamp-3">
+                {product.description}
+              </p>
 
-              <div className="text-center text-base-content/80 space-y-4">
-                {/* DESCRIPTION */}
-                <p>{product.description}</p>
-
-                {/* BUTTON */}
-                <div className="mt-4 pb-4">
-                  <Link
-                    target="_blank"
-                    href={product.url}
-                    className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold rounded-lg transition-colors duration-200 ease-in-out bg-[#EC1380] text-white hover:bg-[#d11272]"
-                    title={`Explore ${product.title}`}
-                  >
-                    <ExternalLink size={16} />
-                    Explore
-                  </Link>
-                </div>
+              <div className="flex items-center gap-4 mt-auto">
+                <Link
+                  target="_blank"
+                  href={product.url}
+                  className="flex-1 inline-flex justify-center items-center gap-2 px-4 py-2.5 text-sm font-semibold rounded-xl bg-primary text-primary-foreground hover:bg-primary/90 transition-colors shadow-sm"
+                  title={`Explore ${product.title}`}
+                >
+                  <ExternalLink size={16} />
+                  Live Demo
+                </Link>
+                {/* If you add github links to config later, this would be a nice secondary button */}
+                <Link
+                  target="_blank"
+                  href={product.url}
+                  className="inline-flex justify-center items-center p-2.5 rounded-xl bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-colors"
+                  title={`Source code for ${product.title}`}
+                >
+                  <Github size={20} />
+                </Link>
               </div>
             </div>
-          </section>
+          </div>
         ))}
       </div>
     </section>
