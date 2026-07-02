@@ -101,7 +101,7 @@ export const footerConfig = {
 
 export const workExperience = [
   {
-    company: "Viswam AI — Meta",
+    company: "Viswam AI - Meta",
     logoUrl: "/images/og-image.png", // Using og-image as placeholder, replace with actual company logo
     title: "AI-Intern",
     href: "#",

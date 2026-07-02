@@ -12,7 +12,8 @@ export type FAQProps = {
 
 export type Project = {
   url: string;
+  repoUrl?: string;
   title: string;
   description: string;
   image: string;
-}
+};

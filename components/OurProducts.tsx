@@ -40,6 +40,7 @@ const OurProducts = () => {
               <div className="flex items-center gap-4 mt-auto">
                 <Link
                   target="_blank"
+                  rel="noopener noreferrer"
                   href={product.url}
                   className="flex-1 inline-flex justify-center items-center gap-2 px-4 py-2.5 text-sm font-semibold rounded-xl bg-primary text-primary-foreground hover:bg-primary/90 transition-colors shadow-sm"
                   title={`Explore ${product.title}`}
@@ -47,15 +48,18 @@ const OurProducts = () => {
                   <ExternalLink size={16} />
                   Live Demo
                 </Link>
-                {/* If you add github links to config later, this would be a nice secondary button */}
-                <Link
-                  target="_blank"
-                  href={product.url}
-                  className="inline-flex justify-center items-center p-2.5 rounded-xl bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-colors"
-                  title={`Source code for ${product.title}`}
-                >
-                  <Github size={20} />
-                </Link>
+                {product.repoUrl && (
+                  <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={product.repoUrl}
+                    className="inline-flex justify-center items-center p-2.5 rounded-xl bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-colors"
+                    title={`Source code for ${product.title}`}
+                    aria-label={`Source code for ${product.title}`}
+                  >
+                    <Github size={20} />
+                  </Link>
+                )}
               </div>
             </div>
           </div>

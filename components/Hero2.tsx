@@ -88,10 +88,12 @@ export function HeroSection() {
         >
           {["AI & ML Enthusiast", "Full Stack Developer", "Problem Solver"].map(
             (skill, index) => (
-              <span
+              <motion.div
                 key={index}
-                className="px-6 py-2.5 bg-card/60 backdrop-blur-sm border border-primary/20 shadow-sm text-foreground rounded-full text-sm font-semibold hover:border-primary hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
+                whileHover={{ y: -4, scale: 1.03 }}
+                transition={{ type: "spring", stiffness: 300, damping: 20 }}
               >
+                <span className="block px-6 py-2.5 bg-card/60 backdrop-blur-sm border border-primary/20 shadow-sm text-foreground rounded-full text-sm font-semibold hover:border-primary hover:shadow-lg transition-all duration-300">
                   {skill}
                 </span>
               </motion.div>
